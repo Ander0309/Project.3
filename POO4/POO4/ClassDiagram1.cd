@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Matrix">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAgEAAAAABAIAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Matrix.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MatrixA">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAABKAAAA=</HashCode>
+      <FileName>MatrixA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MatrixB">
+    <Position X="8" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAABDAAAA=</HashCode>
+      <FileName>MatrixB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MatrixC">
+    <Position X="10.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAAAA=</HashCode>
+      <FileName>MatrixC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
