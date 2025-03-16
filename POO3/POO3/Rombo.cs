@@ -13,7 +13,6 @@ public class Rombo
     {
         int mitad = tamano / 2;
 
-        // Parte superior del rombo
         for (int i = 0; i <= mitad; i++)
         {
             for (int j = 0; j < mitad - i; j++)
@@ -21,7 +20,7 @@ public class Rombo
 
             for (int j = 0; j < i * 2 + 1; j++)
             {
-                if (j == 0 || j == i * 2) // Bordes del rombo
+                if (j == 0 || j == i * 2)
                     Console.Write("#");
                 else
                     Console.Write(" ");
@@ -29,7 +28,6 @@ public class Rombo
             Console.WriteLine();
         }
 
-        // Parte inferior del rombo
         for (int i = mitad - 1; i >= 0; i--)
         {
             for (int j = 0; j < mitad - i; j++)
@@ -37,7 +35,7 @@ public class Rombo
 
             for (int j = 0; j < i * 2 + 1; j++)
             {
-                if (j == 0 || j == i * 2) // Bordes del rombo
+                if (j == 0 || j == i * 2)
                     Console.Write("#");
                 else
                     Console.Write(" ");

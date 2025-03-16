@@ -4,12 +4,11 @@ class Program
 {
     static void Main()
     {
-        int tamano = ValidateRombus(); // Llamamos a la función de validación
-        Rombo rombo = new Rombo(tamano); // Creamos un objeto de la clase Rombo
-        rombo.Imprimir(); // Imprimimos el rombo
+        int tamano = ValidateRombus();
+        Rombo rombo = new Rombo(tamano);
+        rombo.Imprimir(); 
     }
 
-    // Método de validación dentro de Program
     private static int ValidateRombus()
     {
         int tamano;
@@ -19,7 +18,7 @@ class Program
             if (!int.TryParse(Console.ReadLine(), out tamano) || tamano % 2 == 0 || tamano < 1)
             {
                 Console.WriteLine("Error: Debe ingresar un número impar positivo.");
-                tamano = -1; // Valor inválido para repetir el bucle
+                tamano = -1;
             }
         } while (tamano == -1);
 
