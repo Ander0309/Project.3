@@ -12,7 +12,7 @@ class Program
         int p = GetPositiveInt();
 
         MatrixA A = new MatrixA(m, n);
-        MatrixB B = new MatrixB(A.N, p);
+        MatrixB B = new MatrixB(n, p);
         MatrixC C = Matrix.Multiply(A, B);
 
         A.Print("A");

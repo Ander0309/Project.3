@@ -20,6 +20,9 @@ public abstract class Matrix
             throw new ArgumentException("Las dimensiones de la matriz deben ser mayores que cero.");
     }
 
+    protected int GetValue(int i, int j) => _data[i, j];
+    protected void SetValue(int i, int j, int value) => _data[i, j] = value;
+
     public static MatrixC Multiply(MatrixA A, MatrixB B)
     {
         if (A.Cols != B.Rows)
@@ -34,9 +37,9 @@ public abstract class Matrix
                 int sum = 0;
                 for (int k = 0; k < A.Cols; k++)
                 {
-                    sum += A._data[i, k] * B._data[k, j];
+                    sum += A.GetValue(i, k) * B.GetValue(k, j);
                 }
-                result._data[i, j] = sum;
+                result.SetValue(i, j, sum);
             }
         }
         return result;
@@ -49,7 +52,7 @@ public abstract class Matrix
         {
             for (int j = 0; j < Cols; j++)
             {
-                Console.Write(_data[i, j] + " ");
+                Console.Write(GetValue(i, j) + " ");
             }
             Console.WriteLine();
         }

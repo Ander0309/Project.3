@@ -20,7 +20,7 @@ public class MatrixA : Matrix
         {
             for (int j = 0; j < _n; j++)
             {
-                _data[i, j] = (i + 1) * j;
+                SetValue(i, j, (i + 1) * j);
             }
         }
     }
